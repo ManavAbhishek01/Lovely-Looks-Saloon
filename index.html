@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lovely Looks - Premium luxury beauty salon for hair, skin, bridal and wellness experiences."
+    />
+    <title>Lovely Looks | Luxury Beauty Salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8rL+GY5h1YkR5xXGz4T5f3vQm7vM2Wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <div class="loader-ring"></div>
+      <p>Lovely Looks</p>
+    </div>
+
+    <div id="cursor-glow" aria-hidden="true"></div>
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightbox-image" src="" alt="Portfolio preview" />
+    </div>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/910000000000?text=Hello%20Lovely%20Looks%2C%20I%20would%20like%20to%20book%20an%20appointment."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Book via WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header class="site-header" id="home">
+      <nav class="navbar container">
+        <a href="#home" class="logo">Lovely Looks</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-gold nav-cta">Book Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-full">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content reveal-up">
+          <p class="eyebrow">Luxury Beauty Lounge</p>
+          <h1>Where Beauty Becomes An Art Form</h1>
+          <p class="hero-sub">
+            Indulge in curated beauty rituals designed by top artists, crafted to elevate confidence with every detail.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-gold">Book Appointment</a>
+            <a href="#services" class="btn btn-glass">Explore Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container about-grid">
+          <div class="about-image reveal-left">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80"
+              alt="Luxury beauty treatment in progress"
+            />
+          </div>
+          <div class="about-content reveal-right">
+            <p class="eyebrow">About Lovely Looks</p>
+            <h2>Refined Beauty. Personalized Care.</h2>
+            <p>
+              Our salon blends modern skin science with timeless artistry to deliver transformative experiences. Every
+              visit is tailored with precision, comfort, and indulgent attention.
+            </p>
+            <div class="mini-stats">
+              <div class="mini-stat">
+                <h3><span class="counter" data-target="7">0</span>+</h3>
+                <p>Years of Excellence</p>
+              </div>
+              <div class="mini-stat">
+                <h3><span class="counter" data-target="500">0</span>+</h3>
+                <p>Happy Clients</p>
+              </div>
+              <div class="mini-stat">
+                <h3><span class="counter" data-target="4.9">0</span></h3>
+                <p>Average Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section-dark section parallax-bg">
+        <div class="container stats-grid">
+          <article class="stat-card reveal-up">
+            <h3><span class="counter" data-target="500">0</span>+</h3>
+            <p>Clients Styled</p>
+          </article>
+          <article class="stat-card reveal-up">
+            <h3><span class="counter" data-target="7">0</span>+</h3>
+            <p>Years Luxury Service</p>
+          </article>
+          <article class="stat-card reveal-up">
+            <h3><span class="counter" data-target="50">0</span>+</h3>
+            <p>Bridal Transformations</p>
+          </article>
+          <article class="stat-card reveal-up">
+            <h3><span class="counter" data-target="12">0</span></h3>
+            <p>Expert Specialists</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="services section">
+        <div class="container">
+          <p class="eyebrow center">Signature Treatments</p>
+          <h2 class="center">Luxury Services</h2>
+          <div class="services-grid">
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-eye"></i>
+              <h3>Eyebrow Threading</h3>
+              <p>Precision shaping for clean, balanced brows that frame your face beautifully.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-feather-pointed"></i>
+              <h3>Eyebrow Beautification</h3>
+              <p>Premium brow styling and finishing for naturally elegant definition.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-crown"></i>
+              <h3>Bridal Services</h3>
+              <p>Complete bridal beauty planning with trial sessions and wedding-day styling.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-ring"></i>
+              <h3>Bridal Services (Premium)</h3>
+              <p>Luxury bridal packages with advanced skin, hair, and makeup coordination.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-shoe-prints"></i>
+              <h3>Pedicure</h3>
+              <p>Relaxing foot care with exfoliation, hydration, and polished finishing.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Facials</h3>
+              <p>Customized facial therapies designed to cleanse, nourish, and illuminate skin.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-scissors"></i>
+              <h3>Haircut</h3>
+              <p>Precision cuts tailored to your face shape, texture, and personal style.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-droplet"></i>
+              <h3>Body Waxing</h3>
+              <p>Comfort-focused waxing with skin-soothing care for smooth results.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <h3>Make-up</h3>
+              <p>Refined glam looks for events, photoshoots, and celebrations.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-brush"></i>
+              <h3>Make-up Services</h3>
+              <p>Personalized makeup services from subtle elegance to full statement looks.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-hand-sparkles"></i>
+              <h3>Manicure</h3>
+              <p>Classic and premium hand care with shaping, cuticle care, and polish.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-feather"></i>
+              <h3>Waxing</h3>
+              <p>Targeted waxing services for clean finish and long-lasting smoothness.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-pump-soap"></i>
+              <h3>Shampoo & Conditioning</h3>
+              <p>Scalp-cleansing rituals with nourishing conditioners for silky, healthy hair.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-water-ladder"></i>
+              <h3>Spa Services</h3>
+              <p>Luxury relaxation services crafted to refresh body, mind, and skin.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-wind"></i>
+              <h3>Hairstyling</h3>
+              <p>Elegant blowouts and occasion-ready styling with smooth, lasting hold.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-ruler-combined"></i>
+              <h3>Hair Straightening</h3>
+              <p>Sleek straightening services for polished, frizz-controlled hair texture.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-wave-square"></i>
+              <h3>Hair Rebonding</h3>
+              <p>Professional rebonding for permanently straighter and smoother strands.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-sparkles"></i>
+              <h3>Hair Smoothening</h3>
+              <p>Anti-frizz smoothening treatment for glossy, manageable everyday hair.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+            <article class="service-card reveal-up">
+              <i class="fa-solid fa-flask-vial"></i>
+              <h3>Keratin Treatment</h3>
+              <p>Deep keratin infusion to repair damage and restore a silky premium finish.</p>
+              <a href="#booking">View Treatments</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <p class="eyebrow center">Crafted Looks</p>
+          <h2 class="center">Portfolio Highlights</h2>
+          <div class="portfolio-grid">
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Bridal makeup look" />
+              <span>Bridal Glow</span>
+            </button>
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1498842812179-c81beecf902c?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1498842812179-c81beecf902c?auto=format&fit=crop&w=900&q=80" alt="Hairstyling transformation" />
+              <span>Hair Sculpture</span>
+            </button>
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80" alt="Luxury facial session" />
+              <span>Skin Therapy</span>
+            </button>
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80" alt="Nail art close-up" />
+              <span>Nail Couture</span>
+            </button>
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=900&q=80" alt="Beauty salon interior" />
+              <span>Salon Ambience</span>
+            </button>
+            <button class="portfolio-item reveal-up" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Client after makeover" />
+              <span>Final Reveal</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="testimonials section">
+        <div class="container">
+          <p class="eyebrow center">Client Love</p>
+          <h2 class="center">Testimonials</h2>
+          <div class="testimonial-wrap">
+            <button class="carousel-btn" id="prev-testimonial" aria-label="Previous review">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-track" id="testimonial-track">
+              <article class="testimonial-card active">
+                <div class="stars">★★★★★</div>
+                <p>"Absolutely flawless service. My bridal look lasted all day and felt uniquely me."</p>
+                <h4>Rhea Kapoor</h4>
+              </article>
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"A true luxury experience from consultation to finish. The skin treatment was transformative."</p>
+                <h4>Ananya Mehta</h4>
+              </article>
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The team understands premium styling. Every detail feels curated and deeply professional."</p>
+                <h4>Priya Sharma</h4>
+              </article>
+            </div>
+            <button class="carousel-btn" id="next-testimonial" aria-label="Next review">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="booking section">
+        <div class="container booking-grid">
+          <div class="booking-copy reveal-left">
+            <p class="eyebrow">Reserve Your Moment</p>
+            <h2>Book A Premium Session</h2>
+            <p>
+              Choose your desired treatment and preferred time. Our concierge team will confirm every detail for your
+              seamless salon experience.
+            </p>
+          </div>
+          <form id="booking-form" class="booking-form reveal-right" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" required />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Eyebrow Threading</option>
+                <option>Eyebrow Beautification</option>
+                <option>Bridal Services</option>
+                <option>Bridal Services (Premium)</option>
+                <option>Pedicure</option>
+                <option>Facials</option>
+                <option>Haircut</option>
+                <option>Body Waxing</option>
+                <option>Make-up</option>
+                <option>Make-up Services</option>
+                <option>Manicure</option>
+                <option>Waxing</option>
+                <option>Shampoo & Conditioning</option>
+                <option>Spa Services</option>
+                <option>Hairstyling</option>
+                <option>Hair Straightening</option>
+                <option>Hair Rebonding</option>
+                <option>Hair Smoothening</option>
+                <option>Keratin Treatment</option>
+              </select>
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="datetime">Date & Time</label>
+              <input id="datetime" name="datetime" type="datetime-local" required />
+              <small class="error"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us your preferences"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-gold">Confirm Appointment</button>
+              <a
+                id="wa-book-btn"
+                class="btn btn-glass"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wa.me/910000000000?text=Hello%20Lovely%20Looks%2C%20I%20want%20to%20book%20an%20appointment."
+              >
+                Book via WhatsApp
+              </a>
+            </div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="map section">
+        <div class="container">
+          <p class="eyebrow center">Visit Us</p>
+          <h2 class="center">Our Location</h2>
+          <div class="map-frame reveal-up">
+            <iframe
+              title="Lovely Looks location"
+              src="https://maps.google.com/maps?q=1st%20floor%2C%20Rachna%20boutique%2C%20Gulab%20Bagh%20Market%2C%20Thakurbari%20Rd%2C%20near%20Hathwa%20Market%2C%20Dariyapur%20Gola%2C%20Salimpur%20Ahra%2C%20Kadamkuan%2C%20Patna%2C%20Bihar%20800003&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-form" class="contact-form-section section">
+        <div class="container">
+          <p class="eyebrow center">Contact Concierge</p>
+          <h2 class="center">Book Your Visit</h2>
+          <div class="form-embed-card reveal-up">
+            <iframe
+              title="Lovely Looks Google Form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdnFm13jR7mhGx8iIMxDDIcqyqwe0vo1TCpw5060mborP2dDA/viewform?usp=publish-editor"
+              loading="lazy"
+            >
+              Loading…
+            </iframe>
+            <a
+              class="btn btn-gold whatsapp-contact-btn"
+              href="https://wa.me/918210237275?text=Hello%20Lovely%20Looks%2C%20I%20would%20like%20to%20book%20my%20visit."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              Book via WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="logo">Lovely Looks</a>
+          <p>Luxury beauty rituals designed for timeless confidence.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>+91 8210237275</p>
+          <p>hello@lovelylooks.com</p>
+          <p>
+            <a
+              href="https://www.google.com/maps/place/lovely+looks/@25.6140137,85.1521902,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed599996d6d81b:0xb1f8da7c0950cfbb!8m2!3d25.6140137!4d85.1521902!16s%2Fg%2F11twq1s08w!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              1st floor, Lovely Looks, Rachna boutique, Gulab Bagh Market, Thakurbari Rd, near Hathwa Market, Dariyapur Gola,
+              Salimpur Ahra, Kadamkuan, Patna, Bihar 800003
+            </a>
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Lovely Looks. All rights reserved.</p>
+      <p class="copyright">Developed by <a href="https://www.linkedin.com/in/manav-abhishek-103794329/">Manav Abhishek</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
